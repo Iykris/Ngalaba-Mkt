@@ -6,31 +6,31 @@
 }
 
 body {
- background-color: #1cf14b; 
- font-family: 'lato' sans-serif;
+ background-color: #e8ece9; 
+ font-family: sans-serif;
 }
-/*
+
 html {
    background-image: url(images/nigeria-economy.jpg);
   background-repeat: no-repeat;
  }
-  */
+  
 #page-wrapper{
     position: fixed;
     width: 100%;
   }
 #header {
-    position:flex;
-    min-height: 60px;
-    padding: auto 0px;
+    position: relative;
+    min-height: 50px;
     display: flex;
     justify-content: space-between;
     align-items: baseline; 
     background-color: #282c2f;
-    grid-template-rows: 5fr 1fr 1fr;
-    grid-gap: 80px;
-
-
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    flex-wrap: nowrap;
+  }
+  header > nav > ul >li {
+    padding: 20px;
   }
   
 @media (max-width: 400px){
@@ -40,17 +40,12 @@ html {
   }
   .logo {
     width: 40vw;
-    margin: 1% 3%;
-
-  }
-  nav{
-    font-weight: 1000px;
-    color: #fff
+    margin: 1% 1%;
    }  
    nav > ul{
     display: flex;
     flex-direction: row;
-    width: 35vw;
+    width: 45vw;
     justify-content: space-around;
     color: #fff;
     padding-right: 10%;
@@ -71,4 +66,19 @@ html {
   a {
     text-decoration: none;
     color: #ffffff;
+  }
+
+  .sub-menu {
+    margin: auto 50vw;
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    list-style: none
+
+  }
+  .sub-menu > li {
+    padding: 40px 60px;
+    font-weight: 600;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
   }
